@@ -15,6 +15,9 @@ function functionEnviar (){
     correo = document.getElementById("correoNuevo").value
     nuevaPersona = new Personas(nombre,edad,correo)
     listaPersona.push(nuevaPersona)
+    document.getElementById("personaNueva").value = ""
+    document.getElementById("edadNueva").value = ""
+    document.getElementById("correoNuevo").value = ""
     render()
 }
 
